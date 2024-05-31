@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body section,
+header {
+  padding: 0;
+  margin: 0;
+}
+
+/* QUERY FOR MOBILE FIRST */
+html,
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  background-color: hsl(0, 100%, 74%);
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+}
+
+main {
+  flex: 1 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+.container .topBlock {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.container .topBlock__title {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .topBlock__title h1 {
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+}
+.container .topBlock__title h1:hover {
+  color: hsl(248, 53%, 39%);
+}
+.container .topBlock p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+}
+.container .blueBanner {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  margin-bottom: 3rem;
+  transition: background-color 0.3s, transform 0.5s;
+  background-color: hsl(248, 53%, 39%);
+}
+.container .blueBanner:hover {
+  background-color: hsl(248, 32%, 49%);
+  transform: scale(1.05);
+}
+.container .blueBanner h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+}
+.container .blueBanner p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+}
+.container .bottomBlock {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.container .form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  background-color: hsl(248, 53%, 39%);
+}
+.container .form__allData-container {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.container .form__data-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  margin-bottom: 2rem;
+  background-color: hsl(246, 25%, 77%);
+}
+.container .form__label {
+  margin-bottom: 0.1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  margin-left: 0.7rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+}
+.container .form__input-container {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+.container .form__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  transition: color 0.3s;
+}
+.container .form__icon:hover {
+  color: hsl(154, 59%, 51%);
+}
+.container .form__input-field {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-style: none;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 0%);
+}
+.container .form__input-field::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(246, 25%, 77%);
+}
+.container .form__input-field:hover, .container .form__input-field:focus {
+  border: 3px solid hsl(248, 32%, 49%);
+}
+.container .form__input-valid {
+  border: 4px solid hsl(154, 59%, 51%);
+}
+.container .form__input-error, .container .form__input-error:focus {
+  outline: hsl(0, 100%, 50%);
+  border: 1px solid hsl(0, 100%, 50%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(0, 100%, 50%);
+}
+.container .form__error_icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  padding-top: 0.05rem;
+  right: 12px;
+  bottom: 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 100%, 50%);
+}
+.container .form__error_warning {
+  width: 100%;
+  color: hsl(0, 100%, 50%);
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 14px;
+  padding-right: 15px;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: hsl(0, 100%, 50%);
+}
+.container .form__reveal_password {
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  position: absolute;
+  right: 45px;
+  bottom: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .form__reveal_password:hover {
+  color: hsl(154, 59%, 51%);
+}
+.container .form__hide {
+  display: none;
+}
+.container .form__btn {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s, transform 0.5s;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(154, 59%, 51%);
+}
+.container .form__btn:hover {
+  background-color: hsl(154, 87%, 48%);
+  transform: scale(1.02);
+}
+.container .form__terms {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(0, 0%, 100%);
+}
+.container .form__terms a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: hsl(0, 100%, 50%);
+  text-decoration: none;
+}
+.container .form__terms a:hover {
+  text-decoration: underline;
+}
+
+.attribution {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 12rem;
+  margin-bottom: 3rem; /* Keeps the footer at the bottom but only after all other content */
+  color: hsl(0, 0%, 50%);
+}
+
+.attribution a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 40rem;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
