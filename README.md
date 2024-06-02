@@ -25,8 +25,8 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ### Links
 
-- Solution URL: (https://github.com/Junbol-Frontend-Mentor/Intro-component-with-sign-up-form)
-- Live Site URL: (https://junbol-frontend-mentor.github.io/Intro-component-with-sign-up-form/)
+- Solution URL: (https://github.com/Junbol-Frontend-Mentor/base-apparel-coming-soon)
+- Live Site URL: (https://junbol-frontend-mentor.github.io/base-apparel-coming-soon/)
 
 ## My process
 
