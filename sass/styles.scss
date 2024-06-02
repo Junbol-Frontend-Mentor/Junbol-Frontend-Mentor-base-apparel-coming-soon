@@ -58,7 +58,6 @@ body {
   flex-direction: column;
   min-height: 100vh; // This ensures that the total height is at least the height of the viewport
   justify-content: center;
-  position: relative;
   background-color: color('red');
   //background-color: crimson;
 }
@@ -77,7 +76,7 @@ main {
 }
 
 .container {
-  width: 70%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -114,7 +113,7 @@ main {
   }
 
   &__textContent {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -128,11 +127,12 @@ main {
   }
 
   &__title {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
+    text-align: center;
     letter-spacing: 1rem;
     margin-bottom: 2rem;
     //background-color: dodgerblue;
@@ -360,7 +360,7 @@ main {
       position: absolute;
       img {
         width: 100%;
-        content: url(assets/images/hero-desktop.jpg);
+        content: url('../assets/images/hero-desktop.jpg');
       }
     }
 

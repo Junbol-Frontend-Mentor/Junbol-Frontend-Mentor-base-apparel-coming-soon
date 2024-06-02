@@ -21,7 +21,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   justify-content: center;
-  position: relative;
 }
 
 h1 {
@@ -42,7 +41,7 @@ main {
 }
 
 .container {
-  width: 70%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -70,7 +69,7 @@ main {
   width: 100%;
 }
 .container__textContent {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -85,11 +84,12 @@ main {
   margin-bottom: 2rem;
 }
 .container__title {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  text-align: center;
   letter-spacing: 1rem;
   margin-bottom: 2rem;
 }
@@ -317,7 +317,7 @@ main {
   }
   .container__photo img {
     width: 100%;
-    content: url(assets/images/hero-desktop.jpg);
+    content: url("../assets/images/hero-desktop.jpg");
   }
   .container__textContent {
     width: 100%;
