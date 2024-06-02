@@ -10,44 +10,44 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <!-- <script defer src="./scripts/script.js"></script> -->
+    <script defer src="./scripts/script.js"></script>
   </head>
   <body>
     <main>
       <section class="container">
-        <section class="container__nav">
-          <img src="/assets/images/logo.svg" alt="" />
-        </section>
-        <section></section>
-        <section class="container__photo"><img src="/assets/images/hero-mobile.jpg" alt="" /></section>
-        <section class="container__textContent">
-          <div class="container__title">
-            <h1 class="container__topTitlePart">WE'RE</h1>
-            <h1 class="container__bottomTitlePart">COMING SOON</h1>
+        <header class="container__nav">
+          <img src="/assets/images/logo.svg" alt="logo" />
+        </header>
+        <section class="container__content">
+          <!-- Wrapper for text content and photo -->
+          <div class="container__photo">
+            <img src="/assets/images/hero-mobile.jpg" alt="image girl" />
           </div>
-          <p>
-            Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our
-            launch deals.
-          </p>
-        </section>
-
-        <form class="formContainer" id="form">
-          <!-- there is no need of action="/action_page.php" because I am not really sending to a server-->
-          <div class="formContainer__allData_container">
-            <div class="formContainer__data-container">
-              <label for="email" class="formContainer__label">Email:</label>
-              <div class="formContainer__input_container">
-                <i class="formContainer__icon fa fa-envelope fa-2x"></i>
-                <input class="formContainer__input-field" type="email" placeholder="Email" name="email" required id="email" />
-                <button class="formContainer__btn" type="submit"><img src="/assets/images/icon-arrow.svg" alt="" /></button>
-                <div class="formContainer__error_icon form__hide">!</div>
-              </div>
-              <span class="formContainer__error_warning form__hide">Input field cannot be empty or Looks like this is not an email</span>
+          <div class="container__textContent">
+            <div class="container__title">
+              <h1 class="container__topTitlePart">WE'RE</h1>
+              <h1 class="container__bottomTitlePart">COMING SOON</h1>
             </div>
+            <p>
+              Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and
+              our launch deals.
+            </p>
+            <form class="formContainer" id="form">
+              <div class="formContainer__input_container">
+                <i class="formContainer__faIcon fa fa-envelope fa-2x"></i>
+                <input class="formContainer__input-field" type="email" placeholder="Email" name="email" required id="email" />
+                <button class="formContainer__btn" type="submit">
+                  <img src="/assets/images/icon-arrow.svg" alt="submit button" id="submitBtn" />
+                </button>
+                <div class="formContainer__errorIcon formContainer__hide">!</div>
+              </div>
+              <span class="formContainer__error_warning formContainer__hide">Input field cannot be empty or Looks like this is not an email</span>
+            </form>
           </div>
-        </form>
+        </section>
       </section>
     </main>
+
     <footer>
       <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> Coded by
