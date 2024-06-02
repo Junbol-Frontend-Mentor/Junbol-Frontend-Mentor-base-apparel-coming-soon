@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
 *,
 *::before,
 *::after {
@@ -20,12 +20,11 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  align-items: center;
-  background-color: hsl(0, 100%, 74%);
+  justify-content: center;
 }
 
 h1 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.5;
@@ -35,170 +34,167 @@ h1 {
 main {
   flex: 1 0 auto;
   width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
 .container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+}
+.container__nav {
+  width: 100%;
+  display: flex;
+  justify-self: start;
+  margin-top: 2rem;
+  order: -1;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+.container__content {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0 auto;
-  padding: 1.5rem;
 }
-.container .topBlock {
+.container__photo {
   width: 100%;
-  margin: 0 auto;
+  order: -1;
   margin-bottom: 2rem;
 }
-.container .topBlock__title {
-  width: 80%;
+.container__photo img {
+  width: 100%;
+}
+.container__textContent {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   text-align: center;
 }
-.container .topBlock__title h1 {
-  margin-bottom: 2rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  line-height: 1.5;
-  color: hsl(0, 0%, 100%);
-}
-.container .topBlock__title h1:hover {
-  color: hsl(248, 53%, 39%);
-}
-.container .topBlock p {
-  font-family: "Poppins", sans-serif;
+.container__textContent p {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 36%, 70%);
+  margin-bottom: 2rem;
 }
-.container .blueBanner {
-  width: 100%;
-  height: 6rem;
+.container__title {
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border-radius: 7px;
-  margin-bottom: 3rem;
-  transition: background-color 0.3s, transform 0.5s;
-  background-color: hsl(248, 53%, 39%);
-}
-.container .blueBanner:hover {
-  background-color: hsl(248, 32%, 49%);
-  transform: scale(1.05);
-}
-.container .blueBanner h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: hsl(0, 0%, 100%);
-}
-.container .blueBanner p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: hsl(0, 0%, 100%);
-}
-.container .bottomBlock {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.container .form {
-  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
-  border-radius: 10px;
+  letter-spacing: 1rem;
   margin-bottom: 2rem;
-  background-color: hsl(248, 53%, 39%);
 }
-.container .form__allData-container {
-  width: 100%;
-  margin-bottom: 3rem;
+.container__topTitlePart {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  line-height: 1;
+  color: hsl(0, 36%, 70%);
 }
-.container .form__data-container {
+.container__bottomTitlePart {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 650;
+  font-size: 3rem;
+  line-height: 1;
+  color: hsl(0, 0%, 0%);
+}
+
+.formContainer {
   width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
-  border-radius: 7px;
+  justify-content: center;
+  margin: 0 auto;
   margin-bottom: 2rem;
-  background-color: hsl(246, 25%, 77%);
 }
-.container .form__label {
+.formContainer__label {
   margin-bottom: 0.1rem;
   font-weight: bold;
   padding: 0.5rem;
   margin-top: 0.3rem;
   margin-left: 0.7rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 36%, 70%);
 }
-.container .form__input-container {
+.formContainer__input_container {
   width: 100%;
-  height: 2rem;
+  height: 3rem;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   position: relative;
-  margin-bottom: 0.6rem;
+  border-radius: 30px;
+  border: 3px solid hsl(0, 36%, 70%);
+  background-color: hsl(0, 93%, 68%);
 }
-.container .form__icon {
+.formContainer__icon {
+  min-width: 50px;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
   color: white;
-  min-width: 50px;
+  margin-left: 1rem;
   text-align: center;
-  background-color: hsl(248, 32%, 49%);
   transition: color 0.3s;
 }
-.container .form__icon:hover {
-  color: hsl(154, 59%, 51%);
+.formContainer__icon:hover {
+  color: hsl(96, 92%, 67%);
 }
-.container .form__input-field {
-  width: 100%;
+.formContainer__icon i {
+  height: 2rem;
+}
+.formContainer__input-field {
+  width: 80%;
   height: 100%;
-  padding: 10px;
+  display: flex;
   border-style: none;
   outline: none;
-  font-family: "Poppins", sans-serif;
+  margin-right: 3rem;
+  padding-left: 1rem;
+  outline: hsl(0, 100%, 50%);
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
   color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
 }
-.container .form__input-field::placeholder {
-  font-family: "Poppins", sans-serif;
+.formContainer__input-field::placeholder {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 200;
   font-size: 1rem;
   line-height: 1.5;
-  color: hsl(246, 25%, 77%);
 }
-.container .form__input-field:hover, .container .form__input-field:focus {
-  border: 3px solid hsl(248, 32%, 49%);
+.formContainer__input-field:hover, .formContainer__input-field:focus {
+  border: 3px solid;
 }
-.container .form__input-valid {
-  border: 4px solid hsl(154, 59%, 51%);
+.formContainer__input-valid {
+  border: 4px solid hsl(96, 92%, 67%);
 }
-.container .form__input-error, .container .form__input-error:focus {
+.formContainer__input-error, .formContainer__input-error:focus {
   outline: hsl(0, 100%, 50%);
   border: 1px solid hsl(0, 100%, 50%);
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5;
   color: hsl(0, 100%, 50%);
 }
-.container .form__error_icon {
+.formContainer__error_icon {
   width: 24px;
   height: 24px;
   border-radius: 50px;
@@ -207,106 +203,137 @@ main {
   text-align: center;
   position: absolute;
   padding-top: 0.05rem;
-  right: 12px;
-  bottom: 4px;
-  font-family: "Poppins", sans-serif;
+  right: 70px;
+  bottom: 10px;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   font-size: 1rem;
   line-height: 1.5;
   color: hsl(0, 0%, 100%);
   background-color: hsl(0, 100%, 50%);
 }
-.container .form__error_warning {
+.formContainer__error_warning {
   width: 100%;
-  color: hsl(0, 100%, 50%);
   font-size: 14px;
-  text-align: right;
+  text-align: center;
   margin-bottom: 14px;
-  padding-right: 15px;
+  padding-right: 5px;
   font-style: italic;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.5;
   color: hsl(0, 100%, 50%);
 }
-.container .form__reveal_password {
-  width: 24px;
-  height: 24px;
-  font-size: 14px;
-  position: absolute;
-  right: 45px;
-  bottom: 4px;
-  cursor: pointer;
+.formContainer__btn {
+  width: 4rem;
+  height: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.container .form__reveal_password:hover {
-  color: hsl(154, 59%, 51%);
-}
-.container .form__hide {
-  display: none;
-}
-.container .form__btn {
-  width: 100%;
-  padding: 15px 20px;
-  border-radius: 5px;
+  border-radius: 45%;
   border: none;
+  z-index: 2;
+  right: 0;
+  position: absolute;
   cursor: pointer;
-  margin-bottom: 2rem;
   transition: background-color 0.3s, transform 0.5s;
-  font-family: "Poppins", sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 1.5;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(154, 59%, 51%);
+  background-color: hsl(0, 93%, 68%);
 }
-.container .form__btn:hover {
-  background-color: hsl(154, 87%, 48%);
+.formContainer__btn img {
+  width: 1rem;
+  height: 1.5rem;
+  margin-left: 0.2rem;
+}
+.formContainer__btn:hover {
+  background-color: hsl(0, 36%, 70%);
   transform: scale(1.02);
 }
-.container .form__terms {
-  font-size: 0.9rem;
-  text-align: center;
-  margin-top: 1rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: hsl(0, 0%, 100%);
-}
-.container .form__terms a {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: hsl(0, 100%, 50%);
-  text-decoration: none;
-}
-.container .form__terms a:hover {
-  text-decoration: underline;
+.formContainer__hide {
+  display: none;
 }
 
 .attribution {
   width: 100%;
+  height: 4rem;
   display: flex;
   justify-content: center;
   top: 12rem;
-  margin-bottom: 3rem; /* Keeps the footer at the bottom but only after all other content */
+  padding: 0.5rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
   color: hsl(0, 0%, 50%);
 }
 
 .attribution a {
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
   text-decoration: none;
 }
 
 @media (min-width: 768px) {
+  main {
+    flex: 1 0 auto;
+    flex-direction: row;
+  }
   .container {
-    max-width: 40rem;
+    max-width: 60rem;
+    max-height: 32rem;
+    margin-top: 5rem;
     display: flex;
+    justify-content: left;
+  }
+  .container__nav {
+    margin-left: 5rem;
+  }
+  .container__content {
+    max-width: 55rem;
+    height: 100%;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .container__photo {
+    width: 40%;
+    height: 100hv;
+    right: 0;
+    top: 0;
+    order: 1;
+    margin-bottom: 2rem;
+    position: absolute;
+  }
+  .container__photo img {
+    width: 100%;
+    content: url(/assets/images/hero-desktop.jpg);
+  }
+  .container__textContent {
+    width: 50%;
+    justify-content: left;
+    order: 0;
+    margin: 0;
+    text-align: left;
+  }
+  .container__title {
+    margin: 0;
+  }
+  .container__topTitlePart {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 1;
+    color: hsl(0, 36%, 70%);
+  }
+  .container__bottomTitlePart {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 650;
+    font-size: 3rem;
+    line-height: 1;
+    color: hsl(0, 0%, 0%);
   }
 }
 
