@@ -44,9 +44,11 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 - How to write gradient variables in SCSS: $gradientOne: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
 
-- • Remember how to increase the size of the fas : <i class="formContainer__icon fa fa-envelope fa-2x"></i>
+-  Remember how to increase the size of the fas : <i class="formContainer__icon fa fa-envelope fa-2x"></i>
 
-- • Stay away from using nextElementSibling: is not precise enough to target the right html element use querySelector instead
+-  Stay away from using nextElementSibling: is not precise enough to target the right html element use querySelector instead
+
+- Dont use the '/' or './" on html absolute paths for images, GitHub dont like it.
 
 ```
 
