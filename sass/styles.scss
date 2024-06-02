@@ -22,14 +22,14 @@ $colors: (
   //-------- PRIMARY ----------------------------
   'desaturated-red': hsl(0, 36%, 70%),
   'soft-red': hsl(0, 93%, 68%),
-  'green': hsl(96, 92%, 67%),
   //-------- NEUTRAL ----------------------------
   'dark-grayish-red': hsl(0, 6%, 24%),
   //--------STANDARD ---------------------------
   'white': hsl(0, 0%, 100%),
   'grey': hsl(0, 0%, 50%),
   'black': hsl(0, 0%, 0%),
-  'warning-red': hsl(0, 100%, 50%)
+  'warning-red': hsl(0, 100%, 50%),
+  'green': hsl(96, 95%, 45%)
 );
 
 // Defining gradient variables separately
@@ -58,6 +58,7 @@ body {
   flex-direction: column;
   min-height: 100vh; // This ensures that the total height is at least the height of the viewport
   justify-content: center;
+  position: relative;
   background-color: color('red');
   //background-color: crimson;
 }
@@ -80,7 +81,7 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
-  align-items: center;
+  //align-items: center;
   margin: 0 auto;
   //background-color: blueviolet;
   &__nav {
@@ -89,7 +90,6 @@ main {
     justify-self: start;
     margin-top: 2rem;
     order: -1;
-    margin-left: 4rem;
     margin-bottom: 2rem;
     //background-color: aqua;
   }
@@ -168,7 +168,7 @@ main {
 
   &__input_container {
     width: 100%;
-    height: 3rem;
+    height: 2rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -179,14 +179,15 @@ main {
     //background-color: chartreuse;
   }
 
-  &__icon {
+  &__faIcon {
     min-width: 50px;
     height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
     text-align: center;
     //background-color: darkred;
     transition: color 0.3s;
@@ -199,13 +200,14 @@ main {
   }
 
   &__input-field {
-    width: 80%;
+    width: 100%;
     height: 100%;
-    display: flex;
+    display: inline-block;
     border-style: none;
     outline: none;
-    margin-right: 3rem;
+    margin-right: 2rem;
     padding-left: 1rem;
+    z-index: 1;
     outline: color('warning-red');
     @include typography(400, 1rem, 1.5, color('black'));
     background-color: color('white');
@@ -213,7 +215,7 @@ main {
 
     &::placeholder {
       //✅🚩 Style for placeholder text
-      @include typography(200, 1rem, 1.5, color('grayish-blue'));
+      @include typography(200, 1rem, 1.5, color('grey'));
     }
 
     &:hover,
@@ -224,26 +226,28 @@ main {
 
   &__input-valid {
     border: 4px solid color('green');
+    @include typography(400, 1rem, 1.5, color('green'));
   }
 
   &__input-error,
   &__input-error:focus {
     outline: color('warning-red');
-    border: 1px solid color('warning-red');
+    border: 3px solid color('warning-red');
     @include typography(400, 1rem, 1.5, color('warning-red'));
   }
 
-  &__error_icon {
-    width: 24px;
-    height: 24px;
+  &__errorIcon {
+    width: 20px;
+    height: 20px;
     border-radius: 50px;
     display: flex;
     justify-content: center;
     text-align: center;
     position: absolute;
     padding-top: 0.05rem;
-    right: 70px;
-    bottom: 10px;
+    right: 50px;
+    bottom: 4px;
+    z-index: 2;
     @include typography(600, 1rem, 1.5, color('white'));
     background-color: color('warning-red');
     //background-color: aqua;
@@ -261,16 +265,17 @@ main {
   }
 
   &__btn {
-    width: 4rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 45%;
+    border-radius: 47%;
     border: none;
     //margin-top: 1rem;
     z-index: 2;
     right: 0;
+    //top:0rem;
     position: absolute;
     cursor: pointer;
     //margin-right: 0.5rem;
@@ -325,29 +330,29 @@ main {
     flex-direction: row;
   }
   .container {
-    max-width: 60rem;
+    min-width: 45rem;
+    max-width: 50rem;
     max-height: 32rem;
     margin-top: 5rem;
     display: flex;
-    justify-content: left;
-
     &__nav {
-      margin-left: 5rem;
+      margin-left: 0rem;
     }
 
     &__content {
-      max-width: 55rem;
+      width: 50%;
       height: 100%;
-      align-items: flex-start;
+      justify-content: space-between;
+      //align-items: flex-start;
       flex-direction: row; // Desktop view
-      justify-content: left;
     }
 
     &__photo {
-      width: 40%;
-      height: 100hv; // 🚩 Always add the height
+      min-width: 45%;
+      max-width: 40%;
+      height: auto; // 🚩 Always add the height
       right: 0;
-      top:0;
+      top: 0;
       order: 1; // ✅ Changed order for desktop view
       //object-fit: cover; // ✅ Ensures the image covers the container without stretching
       margin-bottom: 2rem;
@@ -359,7 +364,7 @@ main {
     }
 
     &__textContent {
-      width: 50%;
+      width: 100%;
       justify-content: left;
       order: 0;
       margin: 0;
@@ -369,15 +374,22 @@ main {
     &__title {
       margin: 0;
     }
-  
+
     &__topTitlePart {
       @include typography(300, 3rem, 1, color('desaturated-red'));
     }
     &__bottomTitlePart {
       @include typography(650, 3rem, 1, color('black'));
     }
+
+    .formContainer {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+    }
   }
-  
 }
 
 /////////////////------ NOTES --------///////////////////////////

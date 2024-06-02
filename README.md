@@ -1,6 +1,6 @@
 # Frontend Mentor - Base Apparel coming soon page solution
 
-This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Base Apparel coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -31,41 +31,25 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 ## My process
 
 ### 🛠 Built with
+
 - Semantic HTML5 markup 🧾
-- Sass(SCSS)  Flexbox 🎨
+- Sass(SCSS) Flexbox 🎨
 - BEM (Block.Element.Modifier)🧾
 - Mobile-first workflow 📱
 - GIT/GitHub 🧾🌎
 - PowerShell (CLI) 🧾
 - Javascript 🤖🚀
 
-
 ### What I learned
 
-- Creating all the logic in Javascript fot the form validation.
-- The use of regular expressions: I have to say this was tough, this makes this challenge not for newbies 🤪. Just check the  password one 🤣.
-- The use of focusout 🔍
-- Using nextElementSibling to target html elements 👨‍👧‍👦.
+- How to write gradient variables in SCSS: $gradientOne: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+
+- • Remember how to increase the size of the fas : <i class="formContainer__icon fa fa-envelope fa-2x"></i>
+
+- • Stay away from using nextElementSibling: is not precise enough to target the right html element use querySelector instead
 
 ```
-Regular Expresions for validating name:
-/^[A-Za-z]+$/ 😨
 
-Regular Expresions for validating email:
-/^[^\s@]+@[^\s@]+\.[^\s@]+$/ 😱
-
-Regular Expresions for validating pssword:
-/^[A-Za-z]+$/
-/^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/ 🤪
-
-Using focusout:
-myFirstName.addEventListener("focusout", validateFirstName);
-
-Using nextElementSibling to target html elements:
-function validatePassword() {
-    let passwordValue = myPassword.value;
-    let passwordError = myPassword.parentElement.nextElementSibling;
-    let passwordIcon = myPassword.nextElementSibling;
 ```
 
 ### Continued development
