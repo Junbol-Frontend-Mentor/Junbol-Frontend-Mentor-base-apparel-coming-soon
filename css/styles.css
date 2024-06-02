@@ -317,7 +317,7 @@ main {
   }
   .container__photo img {
     width: 100%;
-    content: url(/assets/images/hero-desktop.jpg);
+    content: url(assets/images/hero-desktop.jpg);
   }
   .container__textContent {
     width: 100%;
