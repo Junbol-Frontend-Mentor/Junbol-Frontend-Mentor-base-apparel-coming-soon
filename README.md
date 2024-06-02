@@ -50,6 +50,8 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ```
 
+
+
 ```
 
 ### Continued development
