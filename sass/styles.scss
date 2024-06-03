@@ -34,7 +34,9 @@ $colors: (
 
 // Defining gradient variables separately
 $gradientOne: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-$gradientTwo: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+$gradientTwo: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 66%, 58%));
+// .btn  {
+//   background:$gradientTwo;
 
 // Function to retrieve colors
 @function color($color-name) {
@@ -82,6 +84,7 @@ main {
   position: relative;
   //align-items: center;
   margin: 0 auto;
+
   //background-color: blueviolet;
   &__nav {
     width: 100%;
@@ -267,7 +270,7 @@ main {
 
   &__btn {
     width: 2.7rem;
-    height: 2rem;
+    height: 2.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,7 +285,8 @@ main {
     //margin-right: 0.5rem;
     transition: background-color 0.3s, transform 0.5s;
     @include typography(600, 1.5rem, 1.5, color('white'));
-    background-color: color('soft-red');
+    background: $gradientTwo;
+    //background-color: color('soft-red');
     //background-color: blueviolet;
     img {
       width: 1rem;
@@ -333,7 +337,7 @@ main {
   .container {
     min-width: 45rem;
     max-width: 50rem;
-    max-height: 32rem;
+    max-height: 29.5rem;
     margin-top: 5rem;
     display: flex;
     &__nav {

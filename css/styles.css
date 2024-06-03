@@ -235,7 +235,7 @@ main {
 }
 .formContainer__btn {
   width: 2.7rem;
-  height: 2rem;
+  height: 2.1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -251,7 +251,7 @@ main {
   font-size: 1.5rem;
   line-height: 1.5;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(0, 93%, 68%);
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 66%, 58%));
 }
 .formContainer__btn img {
   width: 1rem;
@@ -292,7 +292,7 @@ main {
   .container {
     min-width: 45rem;
     max-width: 50rem;
-    max-height: 32rem;
+    max-height: 29.5rem;
     margin-top: 5rem;
     display: flex;
   }
